@@ -35,13 +35,3 @@ app.get("/", (req, res) => {
   res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
 });
 
-
-// Port
-const PORT = process.env.PORT || 8080;
-//listen
-app.listen(PORT, () => {
-  console.log(
-    `Server Running on ${process.env.DEV_MODE} mode port no ${PORT}`.bgCyan
-      .white
-  );
-});
